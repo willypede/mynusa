@@ -1,0 +1,21 @@
+{
+  "home": "Home",
+  "attention": "Perhatian",
+  "setting": "Pengaturan",
+
+  "invoice": "Tagihan",
+  "trouble_tickets": "Tiket Aduan",
+  "subscription": "Langganan",
+  "internet_usage": "Pemakaian Internet",
+
+  "edit_profile": "Ubah Profil",
+  "language": "Bahasa",
+  "dark_mode": "Mode Gelap",
+  "notification": "Notifikasi",
+  "feedback": "Saran",
+  "rate_mynusa": "Beri Rating App MyNusa",
+  "logout": "Keluar",
+  "choose_language": "Pilih Bahasa"
+
+
+}

@@ -6,8 +6,12 @@ import 'package:mynusa/screens/main_menu/main_menu.dart';
 import 'package:mynusa/screens/setting/setting.dart';
 import 'package:mynusa/screens/splash_screen/splash_screen.dart';
 import 'package:mynusa/services/dark_theme_provider.dart';
+import 'package:mynusa/services/language_provider.dart';
 import 'package:mynusa/services/styles.dart';
 import 'package:provider/provider.dart';
+import 'package:klocalizations_flutter/klocalizations_flutter.dart';
+
+import 'generated/l10n.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
@@ -39,19 +43,36 @@ class _AppState extends State<App> {
         child: Consumer<DarkThemeProvider>(
           builder: (context, value, child) {
 
-            return MaterialApp(
-              initialRoute: "/",
-              theme: Styles.themeData(themeChangeProvider.darkTheme, context),
-              routes: {
-                "/": (context) => const SplashScreen(),
-                "/login": (context) => const Login(),
+            return ChangeNotifierProvider<LanguageProvider>(
+              create: (builder) => LanguageProvider(),
+              child: Builder(
+                builder: (context) =>
+                    MaterialApp(
+                      locale: Provider.of<LanguageProvider>(context, listen: true).currentLocale,
+                      localizationsDelegates: [
+                        S.delegate,
+                        GlobalMaterialLocalizations.delegate,
+                        GlobalWidgetsLocalizations.delegate,
+                        GlobalCupertinoLocalizations.delegate,
+                      ],
+                      supportedLocales: [
+                        Locale('en', ''),
+                        Locale('id', ''),
+                      ],
+                      initialRoute: "/",
+                      theme: Styles.themeData(themeChangeProvider.darkTheme, context),
+                      routes: {
+                        "/": (context) => const SplashScreen(),
+                        "/login": (context) => const Login(),
 
-                "/mainMenu": (context) => MainMenu(),
-                "/home": (context) => const Home(),
-                "/attention": (context) => const Attention(),
+                        "/mainMenu": (context) => MainMenu(),
+                        "/home": (context) => const Home(),
+                        "/attention": (context) => const Attention(),
 
-                "/setting": (context) => const Setting(),
-              },
+                        "/setting": (context) => const Setting(),
+                      },
+                    ),
+              ),
             );
           },
         ),);

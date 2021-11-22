@@ -1,0 +1,21 @@
+{
+  "home": "Home",
+  "attention": "Attention",
+  "setting": "Setting",
+
+  "invoice": "Invoice",
+  "trouble_tickets": "Trouble Tickets",
+  "subscription": "Subscription",
+  "internet_usage": "Internet Usage",
+
+  "edit_profile": "Edit Profile",
+  "language": "Language",
+  "dark_mode": "Dark Mode",
+  "notification": "Notification",
+  "feedback": "Feedback",
+  "rate_mynusa": "Rate MyNusa App",
+  "logout": "Log Out",
+  "choose_language": "Choose Language"
+
+
+}

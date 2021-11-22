@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
+import 'package:mynusa/generated/l10n.dart';
 import 'package:mynusa/screens/attention/attention.dart';
 import 'package:mynusa/screens/home/home.dart';
 import 'package:mynusa/screens/setting/setting.dart';
@@ -22,37 +24,37 @@ class _MainMenuState extends State<MainMenu> {
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           currentIndex: _currentIndex,
-          items: const [
+          items: [
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.warning,
+                  Icons.warning_rounded,
                   size: 30,
                 ),
                 activeIcon: Icon(
-                  Icons.warning,
+                  Icons.warning_rounded,
                   size: 30,
                 ),
-                label: "Warning"),
+                label: S.of(context).attention),
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.home,
+                  Icons.home_rounded,
                   size: 30,
                 ),
                 activeIcon: Icon(
-                  Icons.home,
+                  Icons.home_rounded,
                   size: 30,
                 ),
-                label: "Home"),
+                label: S.of(context).home),
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.settings,
+                  Icons.settings_rounded,
                   size: 30,
                 ),
                 activeIcon: Icon(
-                  Icons.settings,
+                  Icons.settings_rounded,
                   size: 30,
                 ),
-                label: "Setting"),
+                label: S.of(context).setting),
           ],
           iconSize: 30,
           selectedFontSize: 14,
