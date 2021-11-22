@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:mynusa/screens/attention/attention.dart';
+import 'package:mynusa/screens/home/home.dart';
 import 'package:mynusa/screens/login/login.dart';
+import 'package:mynusa/screens/main_menu/main_menu.dart';
+import 'package:mynusa/screens/setting/setting.dart';
 import 'package:mynusa/screens/splash_screen/splash_screen.dart';
 import 'package:mynusa/services/dark_theme_provider.dart';
 import 'package:mynusa/services/styles.dart';
@@ -41,6 +45,12 @@ class _AppState extends State<App> {
               routes: {
                 "/": (context) => const SplashScreen(),
                 "/login": (context) => const Login(),
+
+                "/mainMenu": (context) => MainMenu(),
+                "/home": (context) => const Home(),
+                "/attention": (context) => const Attention(),
+
+                "/setting": (context) => const Setting(),
               },
             );
           },
