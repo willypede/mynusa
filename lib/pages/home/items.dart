@@ -15,7 +15,7 @@ class Items extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Padding(
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 64),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -26,14 +26,16 @@ class Items extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.pushNamed(context, "/unpaidInvoices");
+                          },
                           child: Column(
                             children: [
                               Material(
                                 elevation: 4,
                                 shadowColor: Colors.black,
                                 borderRadius: BorderRadius.circular(12),
-                                child: Container(
+                                child: Ink(
                                   width: 72,
                                   height: 72,
                                   decoration: ShapeDecoration(
@@ -46,13 +48,15 @@ class Items extends StatelessWidget {
                                   child: InkWell(
                                     borderRadius: BorderRadius.circular(12),
                                     splashColor: Colors.transparent,
-                                    onTap: () {},
+                                    onTap: () {
+                                      Navigator.pushNamed(context, "/unpaidInvoices");
+                                    },
                                     child: Icon(
                                       PhosphorIcons.coin_light,
                                       size: 38,
                                       color: Colors.white,
                                     ),
-                                  ),
+                                  )
                                 ),
                               ),
                               const SizedBox(
@@ -77,7 +81,7 @@ class Items extends StatelessWidget {
                                 elevation: 4,
                                 shadowColor: Colors.black,
                                 borderRadius: BorderRadius.circular(12),
-                                child: Container(
+                                child: Ink(
                                   width: 72,
                                   height: 72,
                                   decoration: ShapeDecoration(
@@ -127,7 +131,7 @@ class Items extends StatelessWidget {
                                 elevation: 4,
                                 shadowColor: Colors.black,
                                 borderRadius: BorderRadius.circular(12),
-                                child: Container(
+                                child: Ink(
                                   width: 72,
                                   height: 72,
                                   decoration: ShapeDecoration(
@@ -172,7 +176,7 @@ class Items extends StatelessWidget {
                                 elevation: 4,
                                 shadowColor: Colors.black,
                                 borderRadius: BorderRadius.circular(12),
-                                child: Container(
+                                child: Ink(
                                   width: 72,
                                   height: 72,
                                   decoration: ShapeDecoration(
@@ -222,7 +226,7 @@ class Items extends StatelessWidget {
                                 elevation: 4,
                                 shadowColor: Colors.black,
                                 borderRadius: BorderRadius.circular(12),
-                                child: Container(
+                                child: Ink(
                                   width: 72,
                                   height: 72,
                                   decoration: ShapeDecoration(
@@ -233,7 +237,6 @@ class Items extends StatelessWidget {
                                     ),
                                   ),
                                   child: InkWell(
-                                    onTap: () {},
                                     borderRadius: BorderRadius.circular(12),
                                     splashColor: Colors.transparent,
                                     child: Icon(
@@ -241,6 +244,9 @@ class Items extends StatelessWidget {
                                       size: 38,
                                       color: Colors.white,
                                     ),
+                                    onTap: () {
+                                      Navigator.pushNamed(context, "/subscription");
+                                    },
                                   ),
                                 ),
                               ),
@@ -255,7 +261,9 @@ class Items extends StatelessWidget {
                               )
                             ],
                           ),
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.pushNamed(context, "/subscription");
+                          },
                         ),
                       ],
                     ),

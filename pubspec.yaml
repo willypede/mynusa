@@ -48,6 +48,7 @@ dependencies:
   intl: ^0.17.0
   modal_bottom_sheet: ^2.0.0
   auto_size_text: ^3.0.0
+  widget_marquee: ^0.0.5
 
 dev_dependencies:
   flutter_test:

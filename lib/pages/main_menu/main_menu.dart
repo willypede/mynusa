@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 import 'package:mynusa/generated/l10n.dart';
-import 'package:mynusa/screens/attention/attention.dart';
-import 'package:mynusa/screens/home/home.dart';
-import 'package:mynusa/screens/setting/setting.dart';
+import 'package:mynusa/pages/attention/page_attention.dart';
+import 'package:mynusa/pages/home/page_home.dart';
+import 'package:mynusa/pages/setting/page_setting.dart';
 import 'package:mynusa/services/colors.dart';
 
 class MainMenu extends StatefulWidget {
@@ -15,7 +14,7 @@ class MainMenu extends StatefulWidget {
 
 class _MainMenuState extends State<MainMenu> {
   int _currentIndex = 1;
-  final pages = [Attention(), Home(), Setting()];
+  final pages = [AttentionPage(), HomePage(), SettingPage()];
 
   @override
   Widget build(BuildContext context) {

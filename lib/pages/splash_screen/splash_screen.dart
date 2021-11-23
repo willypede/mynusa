@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mynusa/screens/splash_screen/image_mynusa.dart';
-import 'package:mynusa/screens/splash_screen/loading_splash_screen.dart';
+import 'package:mynusa/pages/splash_screen/image_mynusa.dart';
+import 'package:mynusa/pages/splash_screen/loading_splash_screen.dart';
 import 'package:mynusa/services/colors.dart';
 
 class SplashScreen extends StatefulWidget {

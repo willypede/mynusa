@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mynusa/screens/login/button_send_otp.dart';
-import 'package:mynusa/screens/login/country_picker.dart';
-import 'package:mynusa/screens/login/phone_number.dart';
+import 'package:mynusa/pages/login/button_send_otp.dart';
+import 'package:mynusa/pages/login/country_picker.dart';
+import 'package:mynusa/pages/login/phone_number.dart';
 
 class LoginCard extends StatefulWidget {
   static const double _hPad = 16.0;

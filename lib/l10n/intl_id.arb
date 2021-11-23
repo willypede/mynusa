@@ -1,6 +1,7 @@
 {
   "home": "Home",
   "attention": "Perhatian",
+  "noc_notifications": "Notifikasi NOC",
   "setting": "Pengaturan",
 
   "invoice": "Tagihan",
@@ -15,7 +16,17 @@
   "feedback": "Saran",
   "rate_mynusa": "Beri Rating App MyNusa",
   "logout": "Keluar",
-  "choose_language": "Pilih Bahasa"
+  "choose_language": "Pilih Bahasa",
+
+  "unpaid_invoices": "Semua Tagihan",
+
+  "package": "Paket",
+  "price": "Harga",
+  "package_period": "Periode Paket",
+  "package_period_note": "Paket anda hampir mencapai batas waktu untuk periode ini. Apakah anda akan memperbarui layanan anda?",
+  "no": "Tidak",
+  "renew": "Perbarui",
+  "address": "Alamat"
 
 
 }

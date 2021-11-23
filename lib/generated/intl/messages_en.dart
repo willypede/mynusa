@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "address": MessageLookupByLibrary.simpleMessage("Address"),
         "attention": MessageLookupByLibrary.simpleMessage("Attention"),
         "choose_language":
             MessageLookupByLibrary.simpleMessage("Choose Language"),
@@ -34,11 +35,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "invoice": MessageLookupByLibrary.simpleMessage("Invoice"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "logout": MessageLookupByLibrary.simpleMessage("Log Out"),
+        "no": MessageLookupByLibrary.simpleMessage("No"),
+        "noc_notifications":
+            MessageLookupByLibrary.simpleMessage("NOC Notifications"),
         "notification": MessageLookupByLibrary.simpleMessage("Notification"),
+        "package": MessageLookupByLibrary.simpleMessage("Package"),
+        "package_period":
+            MessageLookupByLibrary.simpleMessage("Package Period"),
+        "package_period_note": MessageLookupByLibrary.simpleMessage(
+            "Your subscription period almost reaches the deadline for this period. Will you renew your service?"),
+        "price": MessageLookupByLibrary.simpleMessage("Price"),
         "rate_mynusa": MessageLookupByLibrary.simpleMessage("Rate MyNusa App"),
+        "renew": MessageLookupByLibrary.simpleMessage("Renew"),
         "setting": MessageLookupByLibrary.simpleMessage("Setting"),
         "subscription": MessageLookupByLibrary.simpleMessage("Subscription"),
         "trouble_tickets":
-            MessageLookupByLibrary.simpleMessage("Trouble Tickets")
+            MessageLookupByLibrary.simpleMessage("Trouble Tickets"),
+        "unpaid_invoices":
+            MessageLookupByLibrary.simpleMessage("Unpaid Invoices")
       };
 }

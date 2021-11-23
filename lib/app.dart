@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:mynusa/screens/attention/attention.dart';
-import 'package:mynusa/screens/home/home.dart';
-import 'package:mynusa/screens/login/login.dart';
-import 'package:mynusa/screens/main_menu/main_menu.dart';
-import 'package:mynusa/screens/setting/setting.dart';
-import 'package:mynusa/screens/splash_screen/splash_screen.dart';
+import 'package:mynusa/pages/attention/page_attention.dart';
+import 'package:mynusa/pages/home/page_home.dart';
+import 'package:mynusa/pages/login/page_login.dart';
+import 'package:mynusa/pages/main_menu/main_menu.dart';
+import 'package:mynusa/pages/noc_notifications/page_noc_notifications.dart';
+import 'package:mynusa/pages/setting/page_setting.dart';
+import 'package:mynusa/pages/splash_screen/splash_screen.dart';
+import 'package:mynusa/pages/subscription/page_subscription.dart';
+import 'package:mynusa/pages/unpaid_invoices/page_unpaid_invoices.dart';
 import 'package:mynusa/services/dark_theme_provider.dart';
 import 'package:mynusa/services/language_provider.dart';
 import 'package:mynusa/services/styles.dart';
@@ -63,13 +66,17 @@ class _AppState extends State<App> {
                       theme: Styles.themeData(themeChangeProvider.darkTheme, context),
                       routes: {
                         "/": (context) => const SplashScreen(),
-                        "/login": (context) => const Login(),
+                        "/login": (context) => const LoginPage(),
 
                         "/mainMenu": (context) => MainMenu(),
-                        "/home": (context) => const Home(),
-                        "/attention": (context) => const Attention(),
+                        "/home": (context) => const HomePage(),
+                        "/nocNotifications": (context) => const NocNotificationsPage(),
+                        "/attention": (context) => const AttentionPage(),
 
-                        "/setting": (context) => const Setting(),
+                        "/setting": (context) => const SettingPage(),
+
+                        "/unpaidInvoices": (context) => UnpaidInvoicesPage(),
+                        "/subscription": (context) => SubscriptionPage(),
                       },
                     ),
               ),

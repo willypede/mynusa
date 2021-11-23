@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "address": MessageLookupByLibrary.simpleMessage("Alamat"),
         "attention": MessageLookupByLibrary.simpleMessage("Perhatian"),
         "choose_language": MessageLookupByLibrary.simpleMessage("Pilih Bahasa"),
         "dark_mode": MessageLookupByLibrary.simpleMessage("Mode Gelap"),
@@ -33,11 +34,21 @@ class MessageLookup extends MessageLookupByLibrary {
         "invoice": MessageLookupByLibrary.simpleMessage("Tagihan"),
         "language": MessageLookupByLibrary.simpleMessage("Bahasa"),
         "logout": MessageLookupByLibrary.simpleMessage("Keluar"),
+        "no": MessageLookupByLibrary.simpleMessage("Tidak"),
+        "noc_notifications":
+            MessageLookupByLibrary.simpleMessage("Notifikasi NOC"),
         "notification": MessageLookupByLibrary.simpleMessage("Notifikasi"),
+        "package": MessageLookupByLibrary.simpleMessage("Paket"),
+        "package_period": MessageLookupByLibrary.simpleMessage("Periode Paket"),
+        "package_period_note": MessageLookupByLibrary.simpleMessage(
+            "Paket anda hampir mencapai batas waktu untuk periode ini. Apakah anda akan memperbarui layanan anda?"),
+        "price": MessageLookupByLibrary.simpleMessage("Harga"),
         "rate_mynusa":
             MessageLookupByLibrary.simpleMessage("Beri Rating App MyNusa"),
+        "renew": MessageLookupByLibrary.simpleMessage("Perbarui"),
         "setting": MessageLookupByLibrary.simpleMessage("Pengaturan"),
         "subscription": MessageLookupByLibrary.simpleMessage("Langganan"),
-        "trouble_tickets": MessageLookupByLibrary.simpleMessage("Tiket Aduan")
+        "trouble_tickets": MessageLookupByLibrary.simpleMessage("Tiket Aduan"),
+        "unpaid_invoices": MessageLookupByLibrary.simpleMessage("Semua Tagihan")
       };
 }

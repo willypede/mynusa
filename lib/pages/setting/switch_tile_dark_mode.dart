@@ -4,14 +4,14 @@ import 'package:mynusa/generated/l10n.dart';
 import 'package:mynusa/services/dark_theme_provider.dart';
 import 'package:provider/provider.dart';
 
-class DarkModeTile extends StatefulWidget {
-  const DarkModeTile({Key? key}) : super(key: key);
+class DarkModeSwitchTile extends StatefulWidget {
+  const DarkModeSwitchTile({Key? key}) : super(key: key);
 
   @override
-  State<DarkModeTile> createState() => _DarkModeTileState();
+  State<DarkModeSwitchTile> createState() => _DarkModeSwitchTileState();
 }
 
-class _DarkModeTileState extends State<DarkModeTile> {
+class _DarkModeSwitchTileState extends State<DarkModeSwitchTile> {
   @override
   Widget build(BuildContext context) {
     final themeChange = Provider.of<DarkThemeProvider>(context);

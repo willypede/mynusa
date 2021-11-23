@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:mynusa/screens/home/items.dart';
+import 'package:mynusa/pages/home/items.dart';
 import 'package:mynusa/services/colors.dart';
 import 'package:mynusa/services/dark_theme_provider.dart';
 import 'package:provider/provider.dart';
 
 import 'home_app_bar.dart';
 
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
               IconButton(
                 icon: Icon(Icons.notifications, color: Colors.white),
                 onPressed: (){
-
+                  Navigator.pushNamed(context, "/nocNotifications");
                 },
               )
             ],

@@ -1,6 +1,7 @@
 {
   "home": "Home",
   "attention": "Attention",
+  "noc_notifications": "NOC Notifications",
   "setting": "Setting",
 
   "invoice": "Invoice",
@@ -15,7 +16,17 @@
   "feedback": "Feedback",
   "rate_mynusa": "Rate MyNusa App",
   "logout": "Log Out",
-  "choose_language": "Choose Language"
+  "choose_language": "Choose Language",
+
+  "unpaid_invoices": "Unpaid Invoices",
+
+  "package": "Package",
+  "price": "Price",
+  "package_period": "Package Period",
+  "package_period_note": "Your subscription period almost reaches the deadline for this period. Will you renew your service?",
+  "no": "No",
+  "renew": "Renew",
+  "address": "Address"
 
 
 }

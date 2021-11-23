@@ -70,6 +70,16 @@ class S {
     );
   }
 
+  /// `NOC Notifications`
+  String get noc_notifications {
+    return Intl.message(
+      'NOC Notifications',
+      name: 'noc_notifications',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Setting`
   String get setting {
     return Intl.message(
@@ -195,6 +205,86 @@ class S {
     return Intl.message(
       'Choose Language',
       name: 'choose_language',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Unpaid Invoices`
+  String get unpaid_invoices {
+    return Intl.message(
+      'Unpaid Invoices',
+      name: 'unpaid_invoices',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Package`
+  String get package {
+    return Intl.message(
+      'Package',
+      name: 'package',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Price`
+  String get price {
+    return Intl.message(
+      'Price',
+      name: 'price',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Package Period`
+  String get package_period {
+    return Intl.message(
+      'Package Period',
+      name: 'package_period',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your subscription period almost reaches the deadline for this period. Will you renew your service?`
+  String get package_period_note {
+    return Intl.message(
+      'Your subscription period almost reaches the deadline for this period. Will you renew your service?',
+      name: 'package_period_note',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No`
+  String get no {
+    return Intl.message(
+      'No',
+      name: 'no',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Renew`
+  String get renew {
+    return Intl.message(
+      'Renew',
+      name: 'renew',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Address`
+  String get address {
+    return Intl.message(
+      'Address',
+      name: 'address',
       desc: '',
       args: [],
     );

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mynusa/screens/login/card_login.dart';
+import 'package:mynusa/pages/login/card_login.dart';
 
-class Login extends StatelessWidget {
-  const Login({Key? key}) : super(key: key);
+class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
