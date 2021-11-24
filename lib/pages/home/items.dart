@@ -265,6 +265,56 @@ class Items extends StatelessWidget {
                             Navigator.pushNamed(context, "/subscription");
                           },
                         ),
+                        const SizedBox(
+                          height: 32,
+                        ),
+                        GestureDetector(
+                          child: Column(
+                            children: [
+                              Material(
+                                elevation: 4,
+                                shadowColor: Colors.black,
+                                borderRadius: BorderRadius.circular(12),
+                                child: Ink(
+                                  width: 72,
+                                  height: 72,
+                                  decoration: ShapeDecoration(
+                                    color: Colors.black,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius:
+                                      BorderRadius.all(Radius.circular(12.0)),
+                                    ),
+                                  ),
+
+                                  child: InkWell(
+                                    borderRadius: BorderRadius.circular(12),
+                                    splashColor: Colors.transparent,
+                                    child: Icon(
+                                      PhosphorIcons.camera_bold,
+                                      size: 38,
+                                      color: Colors.white,
+                                    ),
+                                    onTap: () {
+                                      Navigator.pushNamed(context, "/cctv");
+                                    },
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "CCTV",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontFamily: "Nunito", color: Colors.white),
+                              )
+                            ],
+                          ),
+                          onTap: () {
+                            Navigator.pushNamed(context, "/cctv");
+                          },
+                        ),
                       ],
                     ),
                   ),

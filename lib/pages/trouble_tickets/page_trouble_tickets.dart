@@ -39,7 +39,7 @@ class TroubleTicketsPage extends StatelessWidget {
           ),
           centerTitle: true,
         ),
-        body: ,
+        body: Container(),
       ),
     );
   }

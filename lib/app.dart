@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mynusa/pages/attention/page_attention.dart';
+import 'package:mynusa/pages/cctv/cctv.dart';
 import 'package:mynusa/pages/home/page_home.dart';
 import 'package:mynusa/pages/login/page_login.dart';
 import 'package:mynusa/pages/main_menu/main_menu.dart';
@@ -77,6 +78,7 @@ class _AppState extends State<App> {
 
                         "/unpaidInvoices": (context) => UnpaidInvoicesPage(),
                         "/subscription": (context) => SubscriptionPage(),
+                        "/cctv": (context) => CctvPage(),
                       },
                     ),
               ),
