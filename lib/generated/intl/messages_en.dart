@@ -45,6 +45,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "package_period_note": MessageLookupByLibrary.simpleMessage(
             "Your subscription period almost reaches the deadline for this period. Will you renew your service?"),
         "price": MessageLookupByLibrary.simpleMessage("Price"),
+        "pull_to_refresh":
+            MessageLookupByLibrary.simpleMessage("Pull to refresh"),
         "rate_mynusa": MessageLookupByLibrary.simpleMessage("Rate MyNusa App"),
         "renew": MessageLookupByLibrary.simpleMessage("Renew"),
         "setting": MessageLookupByLibrary.simpleMessage("Setting"),

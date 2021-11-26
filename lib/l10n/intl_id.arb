@@ -26,7 +26,10 @@
   "package_period_note": "Paket anda hampir mencapai batas waktu untuk periode ini. Apakah anda akan memperbarui layanan anda?",
   "no": "Tidak",
   "renew": "Perbarui",
-  "address": "Alamat"
+  "address": "Alamat",
+
+
+  "pull_to_refresh": "Tarik ke bawah untuk memperbarui"
 
 
 }

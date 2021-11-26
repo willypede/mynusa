@@ -21,7 +21,7 @@ class _CctvPageState extends State<CctvPage> {
   void initState() {
     super.initState();
     player.setDataSource(
-        "https://satisfied-toad-2148.dataplicity.io/?action=stream",
+        "https://prosthetic-owl-2020.dataplicity.io/?action=stream",
         autoPlay: true);
   }
 

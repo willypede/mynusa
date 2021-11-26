@@ -26,7 +26,10 @@
   "package_period_note": "Your subscription period almost reaches the deadline for this period. Will you renew your service?",
   "no": "No",
   "renew": "Renew",
-  "address": "Address"
+  "address": "Address",
+
+
+  "pull_to_refresh": "Pull to refresh"
 
 
 }

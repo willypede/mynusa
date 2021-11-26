@@ -43,6 +43,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "package_period_note": MessageLookupByLibrary.simpleMessage(
             "Paket anda hampir mencapai batas waktu untuk periode ini. Apakah anda akan memperbarui layanan anda?"),
         "price": MessageLookupByLibrary.simpleMessage("Harga"),
+        "pull_to_refresh": MessageLookupByLibrary.simpleMessage(
+            "Tarik ke bawah untuk memperbarui"),
         "rate_mynusa":
             MessageLookupByLibrary.simpleMessage("Beri Rating App MyNusa"),
         "renew": MessageLookupByLibrary.simpleMessage("Perbarui"),

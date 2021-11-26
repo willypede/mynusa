@@ -136,7 +136,8 @@ class _HomeAppBarState extends State<HomeAppBar> {
   Widget build(BuildContext context) {
     final themeChange = Provider.of<DarkThemeProvider>(context);
     return Container(
-        child: GestureDetector(
+        child: InkWell(
+          splashColor: Colors.transparent,
           child: Align(
               alignment: Alignment.centerLeft,
               child: Container(
