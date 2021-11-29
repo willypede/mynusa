@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:mynusa/services/colors.dart';
 import 'package:mynusa/services/dark_theme_provider.dart';
 import 'package:provider/provider.dart';
-import 'package:video_player/video_player.dart';
+import 'package:flutter_vlc_player/flutter_vlc_player.dart';
 
 class CctvPage extends StatefulWidget {
   const CctvPage({Key? key}) : super(key: key);
