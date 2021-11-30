@@ -9,7 +9,7 @@
   "subscription": "Langganan",
   "internet_usage": "Pemakaian Internet",
 
-  "edit_profile": "Ubah Profil",
+  "edit_profile": "Edit Profil",
   "language": "Bahasa",
   "dark_mode": "Mode Gelap",
   "notification": "Notifikasi",
@@ -29,7 +29,11 @@
   "address": "Alamat",
 
 
-  "pull_to_refresh": "Tarik ke bawah untuk memperbarui"
+  "pull_to_refresh": "Tarik ke bawah untuk memperbarui",
 
+  "edit": "Ubah",
+  "current_phone": "Nomor saat ini",
+  "add_phone_number": "Tambah Nomor",
+  "info_phone_number": "Info: Nomor yang anda tambah akan mendapatkan akses pada akun anda."
 
 }

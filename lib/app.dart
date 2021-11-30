@@ -5,6 +5,7 @@ import 'package:mynusa/pages/home/page_home.dart';
 import 'package:mynusa/pages/login/page_login.dart';
 import 'package:mynusa/pages/main_menu/main_menu.dart';
 import 'package:mynusa/pages/noc_notifications/page_noc_notifications.dart';
+import 'package:mynusa/pages/profile/page_profile.dart';
 import 'package:mynusa/pages/setting/page_setting.dart';
 import 'package:mynusa/pages/splash_screen/splash_screen.dart';
 import 'package:mynusa/pages/subscription/page_subscription.dart';
@@ -75,6 +76,7 @@ class _AppState extends State<App> {
                         "/attention": (context) => const AttentionPage(),
 
                         "/setting": (context) => const SettingPage(),
+                        "/profile": (context) => const ProfilePage(),
 
                         "/unpaidInvoices": (context) => UnpaidInvoicesPage(),
                         "/subscription": (context) => SubscriptionPage(),

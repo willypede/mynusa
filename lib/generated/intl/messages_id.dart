@@ -22,13 +22,19 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "add_phone_number":
+            MessageLookupByLibrary.simpleMessage("Tambah Nomor"),
         "address": MessageLookupByLibrary.simpleMessage("Alamat"),
         "attention": MessageLookupByLibrary.simpleMessage("Perhatian"),
         "choose_language": MessageLookupByLibrary.simpleMessage("Pilih Bahasa"),
+        "current_phone": MessageLookupByLibrary.simpleMessage("Nomor saat ini"),
         "dark_mode": MessageLookupByLibrary.simpleMessage("Mode Gelap"),
-        "edit_profile": MessageLookupByLibrary.simpleMessage("Ubah Profil"),
+        "edit": MessageLookupByLibrary.simpleMessage("Ubah"),
+        "edit_profile": MessageLookupByLibrary.simpleMessage("Edit Profil"),
         "feedback": MessageLookupByLibrary.simpleMessage("Saran"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "info_phone_number": MessageLookupByLibrary.simpleMessage(
+            "Info: Nomor yang anda tambah akan mendapatkan akses pada akun anda."),
         "internet_usage":
             MessageLookupByLibrary.simpleMessage("Pemakaian Internet"),
         "invoice": MessageLookupByLibrary.simpleMessage("Tagihan"),

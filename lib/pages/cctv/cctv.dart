@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:mynusa/services/colors.dart';
 import 'package:mynusa/services/dark_theme_provider.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_vlc_player/flutter_vlc_player.dart';
 
 class CctvPage extends StatefulWidget {
   const CctvPage({Key? key}) : super(key: key);
@@ -21,7 +20,7 @@ class _CctvPageState extends State<CctvPage> {
   void initState() {
     super.initState();
     player.setDataSource(
-        "https://prosthetic-owl-2020.dataplicity.io/?action=stream",
+        "https://youtu.be/-oKp1m_T19c",
         autoPlay: true);
   }
 

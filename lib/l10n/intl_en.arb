@@ -29,7 +29,10 @@
   "address": "Address",
 
 
-  "pull_to_refresh": "Pull to refresh"
+  "pull_to_refresh": "Pull to refresh",
 
-
+  "edit": "Edit",
+  "current_phone": "Current phone",
+  "add_phone_number": "Add Phone Number",
+  "info_phone_number": "Info: The phone number you add will get access to your account."
 }

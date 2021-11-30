@@ -299,6 +299,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Edit`
+  String get edit {
+    return Intl.message(
+      'Edit',
+      name: 'edit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Current phone`
+  String get current_phone {
+    return Intl.message(
+      'Current phone',
+      name: 'current_phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Phone Number`
+  String get add_phone_number {
+    return Intl.message(
+      'Add Phone Number',
+      name: 'add_phone_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Info: The phone number you add will get access to your account.`
+  String get info_phone_number {
+    return Intl.message(
+      'Info: The phone number you add will get access to your account.',
+      name: 'info_phone_number',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

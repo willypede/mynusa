@@ -18,10 +18,9 @@ class LanguageTile extends StatefulWidget {
 
 class _LanguageTileState extends State<LanguageTile> {
   List<Languages> arrLanguage = [
-    Languages(language: "English", locale: 'en'),
+    Languages(language: "English", locale: 'us'),
     Languages(language: "Indonesian", locale: 'id')
   ];
-  String _selectedLanguage = "";
   void showLanguages(Color color){
     final currentLocale = Provider.of<LanguageProvider>(context, listen: false).currentLocale;
     showMaterialModalBottomSheet(
@@ -36,7 +35,6 @@ class _LanguageTileState extends State<LanguageTile> {
         ),
         clipBehavior: Clip.antiAliasWithSaveLayer,
         builder: (context) => Container(
-          height: MediaQuery.of(context).size.height / 3,
           padding: const EdgeInsets.fromLTRB(16, 32, 16, 16),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -44,6 +42,7 @@ class _LanguageTileState extends State<LanguageTile> {
               Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
+
                   Text(
                     S.of(context).choose_language,
                     style: TextStyle(
@@ -79,7 +78,6 @@ class _LanguageTileState extends State<LanguageTile> {
                             onTap: () {
                               setState(() {
                                 context.read<LanguageProvider>().changeLocale(arrLanguage[index].locale);
-                                _selectedLanguage = arrLanguage[index].language;
                               });
                               Navigator.pop(context);
                             },
@@ -92,6 +90,12 @@ class _LanguageTileState extends State<LanguageTile> {
                                     EdgeInsets.symmetric(vertical: 8),
                                     child: Row(
                                       children: [
+                                        Image.asset('icons/flags/png/' + arrLanguage[index].locale + '.png',
+                                            package: 'country_icons',
+                                        width: 20,),
+                                        const SizedBox(
+                                          width: 8,
+                                        ),
                                         Text(
                                           arrLanguage[index].language,
                                           style: TextStyle(

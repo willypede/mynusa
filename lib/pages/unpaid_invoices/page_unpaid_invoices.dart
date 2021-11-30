@@ -31,7 +31,7 @@ class _UnpaidInvoicesPageState extends State<UnpaidInvoicesPage> {
 
     // dummy
     for(int i = 1; i <= 3; i++){
-      final ui = UnpaidInvoice(id: i, status: false,
+      final ui = UnpaidInvoice(id: i, status: i % 2 == 0 ? false : true,
           invoiceNumber: "#" + i.toString(), tanggal: "2021-11-24");
       arr.add(ui);
     }

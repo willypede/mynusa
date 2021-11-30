@@ -28,6 +28,7 @@ class EditProfileTile extends StatelessWidget {
               fontWeight: FontWeight.w700),
         ),
         onTap: () {
+          Navigator.pushNamed(context, "/profile");
         },
       ),
     );

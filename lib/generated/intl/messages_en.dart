@@ -22,14 +22,20 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "add_phone_number":
+            MessageLookupByLibrary.simpleMessage("Add Phone Number"),
         "address": MessageLookupByLibrary.simpleMessage("Address"),
         "attention": MessageLookupByLibrary.simpleMessage("Attention"),
         "choose_language":
             MessageLookupByLibrary.simpleMessage("Choose Language"),
+        "current_phone": MessageLookupByLibrary.simpleMessage("Current phone"),
         "dark_mode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
+        "edit": MessageLookupByLibrary.simpleMessage("Edit"),
         "edit_profile": MessageLookupByLibrary.simpleMessage("Edit Profile"),
         "feedback": MessageLookupByLibrary.simpleMessage("Feedback"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "info_phone_number": MessageLookupByLibrary.simpleMessage(
+            "Info: The phone number you add will get access to your account."),
         "internet_usage":
             MessageLookupByLibrary.simpleMessage("Internet Usage"),
         "invoice": MessageLookupByLibrary.simpleMessage("Invoice"),
