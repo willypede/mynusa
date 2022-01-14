@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:mynusa/models/unpaid_invoice.dart';
+import 'package:mynusa/generated/l10n.dart';
+import 'package:mynusa/models/invoice.dart';
 import 'package:mynusa/services/colors.dart';
 import 'package:mynusa/services/custom_calendar.dart';
 
-class UnpaidInvoicesCard extends StatelessWidget {
-  UnpaidInvoicesCard(this.unpaidInvoices, this.lastItem);
-  final UnpaidInvoice unpaidInvoices;
+class InvoiceCard extends StatelessWidget {
+  InvoiceCard(this.invoices, this.lastItem);
+  final Invoice invoices;
   final bool lastItem;
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,7 @@ class UnpaidInvoicesCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    CustomCalendar.convertToIdnCalendar(unpaidInvoices.tanggal),
+                    CustomCalendar.convertToIdnCalendar(invoices.tanggal),
                     style: TextStyle(
                         fontFamily: "Nunito",
                         fontSize: 14,
@@ -32,7 +33,7 @@ class UnpaidInvoicesCard extends StatelessWidget {
                     height: 8,
                   ),
                   Text(
-                    unpaidInvoices.invoiceNumber,
+                    invoices.invoiceNumber,
                     style: TextStyle(
                         fontFamily: "Nunito",
                         fontSize: 16,
@@ -42,12 +43,12 @@ class UnpaidInvoicesCard extends StatelessWidget {
                     height: 8,
                   ),
                   Text(
-                      unpaidInvoices.status ? "Paid" : "Unpaid",
+                      invoices.status ? S.of(context).paid : S.of(context).unpaid,
                       style: TextStyle(
                           fontFamily: "Nunito",
                           fontSize: 14,
                           fontWeight: FontWeight.w700,
-                          color: unpaidInvoices.status ? Colors.green : Colors.red)
+                          color: invoices.status ? Colors.green : Colors.red)
                   ),
                 ],
               ),

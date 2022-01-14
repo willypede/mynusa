@@ -50,6 +50,26 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `Paid`
+  String get paid {
+    return Intl.message(
+      'Paid',
+      name: 'paid',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Unpaid`
+  String get unpaid {
+    return Intl.message(
+      'Unpaid',
+      name: 'unpaid',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Home`
   String get home {
     return Intl.message(
@@ -215,6 +235,16 @@ class S {
     return Intl.message(
       'Unpaid Invoices',
       name: 'unpaid_invoices',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invoice History`
+  String get invoice_history {
+    return Intl.message(
+      'Invoice History',
+      name: 'invoice_history',
       desc: '',
       args: [],
     );

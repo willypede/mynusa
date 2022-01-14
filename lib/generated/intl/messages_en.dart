@@ -39,6 +39,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "internet_usage":
             MessageLookupByLibrary.simpleMessage("Internet Usage"),
         "invoice": MessageLookupByLibrary.simpleMessage("Invoice"),
+        "invoice_history":
+            MessageLookupByLibrary.simpleMessage("Invoice History"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "logout": MessageLookupByLibrary.simpleMessage("Log Out"),
         "no": MessageLookupByLibrary.simpleMessage("No"),
@@ -50,6 +52,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Package Period"),
         "package_period_note": MessageLookupByLibrary.simpleMessage(
             "Your subscription period almost reaches the deadline for this period. Will you renew your service?"),
+        "paid": MessageLookupByLibrary.simpleMessage("Paid"),
         "price": MessageLookupByLibrary.simpleMessage("Price"),
         "pull_to_refresh":
             MessageLookupByLibrary.simpleMessage("Pull to refresh"),
@@ -59,6 +62,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "subscription": MessageLookupByLibrary.simpleMessage("Subscription"),
         "trouble_tickets":
             MessageLookupByLibrary.simpleMessage("Trouble Tickets"),
+        "unpaid": MessageLookupByLibrary.simpleMessage("Unpaid"),
         "unpaid_invoices":
             MessageLookupByLibrary.simpleMessage("Unpaid Invoices")
       };

@@ -24,7 +24,7 @@ class FeedbackTile extends StatelessWidget {
               fontWeight: FontWeight.w700),
         ),
         onTap: () {
-          Navigator.pushNamed(context, "/penyakit");
+          Navigator.pushNamed(context, "/feedback");
         },
       ),
     );

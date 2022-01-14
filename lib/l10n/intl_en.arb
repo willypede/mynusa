@@ -1,4 +1,7 @@
 {
+  "paid": "Paid",
+  "unpaid": "Unpaid",
+
   "home": "Home",
   "attention": "Attention",
   "noc_notifications": "NOC Notifications",
@@ -19,6 +22,7 @@
   "choose_language": "Choose Language",
 
   "unpaid_invoices": "Unpaid Invoices",
+  "invoice_history": "Invoice History",
 
   "package": "Package",
   "price": "Price",

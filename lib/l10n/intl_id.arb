@@ -1,4 +1,7 @@
 {
+  "paid": "Lunas",
+  "unpaid": "Belum Lunas",
+
   "home": "Home",
   "attention": "Perhatian",
   "noc_notifications": "Notifikasi NOC",
@@ -19,6 +22,7 @@
   "choose_language": "Pilih Bahasa",
 
   "unpaid_invoices": "Semua Tagihan",
+  "invoice_history": "Riwayat Pembayaran",
 
   "package": "Paket",
   "price": "Harga",

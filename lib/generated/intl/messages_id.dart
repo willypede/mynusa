@@ -38,6 +38,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "internet_usage":
             MessageLookupByLibrary.simpleMessage("Pemakaian Internet"),
         "invoice": MessageLookupByLibrary.simpleMessage("Tagihan"),
+        "invoice_history":
+            MessageLookupByLibrary.simpleMessage("Riwayat Pembayaran"),
         "language": MessageLookupByLibrary.simpleMessage("Bahasa"),
         "logout": MessageLookupByLibrary.simpleMessage("Keluar"),
         "no": MessageLookupByLibrary.simpleMessage("Tidak"),
@@ -48,6 +50,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "package_period": MessageLookupByLibrary.simpleMessage("Periode Paket"),
         "package_period_note": MessageLookupByLibrary.simpleMessage(
             "Paket anda hampir mencapai batas waktu untuk periode ini. Apakah anda akan memperbarui layanan anda?"),
+        "paid": MessageLookupByLibrary.simpleMessage("Lunas"),
         "price": MessageLookupByLibrary.simpleMessage("Harga"),
         "pull_to_refresh": MessageLookupByLibrary.simpleMessage(
             "Tarik ke bawah untuk memperbarui"),
@@ -57,6 +60,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "setting": MessageLookupByLibrary.simpleMessage("Pengaturan"),
         "subscription": MessageLookupByLibrary.simpleMessage("Langganan"),
         "trouble_tickets": MessageLookupByLibrary.simpleMessage("Tiket Aduan"),
+        "unpaid": MessageLookupByLibrary.simpleMessage("Belum Lunas"),
         "unpaid_invoices": MessageLookupByLibrary.simpleMessage("Semua Tagihan")
       };
 }

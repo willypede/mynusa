@@ -142,7 +142,9 @@ class Items extends StatelessWidget {
                                     ),
                                   ),
                                   child: InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      Navigator.pushNamed(context, "/troubleTickets");
+                                      },
                                     borderRadius: BorderRadius.circular(12),
                                     splashColor: Colors.transparent,
                                     child: Icon(
@@ -164,7 +166,9 @@ class Items extends StatelessWidget {
                               )
                             ],
                           ),
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.pushNamed(context, "/troubleTickets");
+                          },
                         ),
                         const SizedBox(
                           height: 32,

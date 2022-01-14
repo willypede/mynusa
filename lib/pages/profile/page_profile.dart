@@ -2,6 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 import 'package:mynusa/generated/l10n.dart';
+import 'package:mynusa/pages/profile/current_phone.dart';
 import 'package:mynusa/pages/profile/profile_picture.dart';
 import 'package:mynusa/services/colors.dart';
 import 'package:mynusa/services/dark_theme_provider.dart';
@@ -48,17 +49,17 @@ class _ProfilePageState extends State<ProfilePage> {
             },
           ),
           centerTitle: true,
-          actions: [
-            IconButton(
-                icon: Icon(
-                  Icons.history,
-                  size: 32,
-                ),
-                color: Colors.white,
-                onPressed: () {
-
-                })
-          ],
+          // actions: [
+          //   IconButton(
+          //       icon: Icon(
+          //         Icons.history,
+          //         size: 32,
+          //       ),
+          //       color: Colors.white,
+          //       onPressed: () {
+          //
+          //       })
+          // ],
         ),
         body: Container(
           padding: EdgeInsets.all(16),
@@ -69,39 +70,8 @@ class _ProfilePageState extends State<ProfilePage> {
               const SizedBox(
                 height: 16,
               ),
-              Card(
-                elevation: 8,
-                child: Container(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      TextField(
-                        keyboardType: TextInputType.emailAddress,
-                        controller: namaLController,
-                        decoration: InputDecoration(
-                            contentPadding: EdgeInsets.all(8),
-                            prefixIcon: Icon(PhosphorIcons.identification_badge, size: 28, color: Color(int.parse(mediumGrey))),
-                            border: OutlineInputBorder(
-                              borderSide: BorderSide(
-                                  width: 1.0,
-                                  style: BorderStyle.solid,
-                                  color: Colors.grey),
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(8),
-                              ),
-                            ),
-                            labelText: "Nama",
-                            labelStyle: TextStyle(
-                                fontFamily: "Nunito", color: Colors.grey)),
-                        style: const TextStyle(fontFamily: "Nunito"),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-
-              Name()
+              Name(),
+              CurrentPhone()
             ],
           ),
         )

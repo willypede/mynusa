@@ -2,37 +2,36 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:mynusa/generated/l10n.dart';
-import 'package:mynusa/models/unpaid_invoice.dart';
-import 'package:mynusa/pages/unpaid_invoices/card_unpaid_invoices.dart';
+import 'package:mynusa/models/invoice.dart';
+import 'package:mynusa/pages/invoice/card_invoice.dart';
 import 'package:mynusa/services/colors.dart';
 import 'package:mynusa/services/dark_theme_provider.dart';
 import 'package:mynusa/services/no_glow_scroll_view.dart';
 import 'package:provider/provider.dart';
 
-class UnpaidInvoicesPage extends StatefulWidget {
-  UnpaidInvoicesPage({Key? key}) : super(key: key);
+class InvoiceHistoryPage extends StatefulWidget {
+  const InvoiceHistoryPage({Key? key}) : super(key: key);
 
   @override
-  State<UnpaidInvoicesPage> createState() => _UnpaidInvoicesPageState();
+  State<InvoiceHistoryPage> createState() => _InvoiceHistoryPageState();
 }
 
-class _UnpaidInvoicesPageState extends State<UnpaidInvoicesPage> {
-  List<UnpaidInvoice> arrUnpaidInvoice = [];
+class _InvoiceHistoryPageState extends State<InvoiceHistoryPage> {
   int customerId = 0;
 
-  Future<void> _refreshUnpaidInvoices() async {
+  Future<void> _refreshInvoiceHistory() async {
     setState(() {
-      _fetchUnpaidInvoices(customerId);
+      _fetchInvoiceHistory(customerId);
     });
   }
 
-  Future<List<UnpaidInvoice>> _fetchUnpaidInvoices(int customerId) async {
-    List<UnpaidInvoice> arr = [];
+  Future<List<Invoice>> _fetchInvoiceHistory(int customerId) async {
+    List<Invoice> arr = [];
 
     // dummy
-    for(int i = 1; i <= 3; i++){
-      final ui = UnpaidInvoice(id: i, status: i % 2 == 0 ? false : true,
-          invoiceNumber: "#" + i.toString(), tanggal: "2021-11-24");
+    for(int i = 1; i <= 5; i++){
+      final ui = Invoice(id: i, status: true,
+          invoiceNumber: "#123/ASD/123123", tanggal: "27-" + i.toString() + "-2021");
       arr.add(ui);
     }
 
@@ -51,7 +50,7 @@ class _UnpaidInvoicesPageState extends State<UnpaidInvoicesPage> {
               : Color(int.parse(darkGrey)),
           automaticallyImplyLeading: false,
           title: AutoSizeText(
-            S.of(context).unpaid_invoices,
+            S.of(context).invoice_history,
             maxLines: 1,
             style: TextStyle(
                 fontFamily: "Nunito",
@@ -69,17 +68,6 @@ class _UnpaidInvoicesPageState extends State<UnpaidInvoicesPage> {
             },
           ),
           centerTitle: true,
-          actions: [
-            IconButton(
-                icon: Icon(
-                  Icons.history,
-                  size: 32,
-                ),
-                color: Colors.white,
-                onPressed: () {
-
-                })
-          ],
         ),
         body: Column(
           children: [
@@ -92,13 +80,13 @@ class _UnpaidInvoicesPageState extends State<UnpaidInvoicesPage> {
             ),
             Flexible(
               child: RefreshIndicator(
-                  onRefresh: _refreshUnpaidInvoices,
+                  onRefresh: _refreshInvoiceHistory,
                   child: ScrollConfiguration(
                     behavior: NoGlowScrollView(),
                     child: SingleChildScrollView(
                       physics: AlwaysScrollableScrollPhysics(),
                       child: FutureBuilder(
-                          future: _fetchUnpaidInvoices(customerId),
+                          future: _fetchInvoiceHistory(customerId),
                           builder: (context, AsyncSnapshot snapshot) {
                             if (snapshot.connectionState ==
                                 ConnectionState.waiting) {
@@ -127,13 +115,13 @@ class _UnpaidInvoicesPageState extends State<UnpaidInvoicesPage> {
                                     itemCount: snapshot.data.length,
                                     itemBuilder: (context, index) {
 
-                                      final UnpaidInvoice ui = UnpaidInvoice(
-                                        tanggal: snapshot.data[index].tanggal,
-                                        invoiceNumber: snapshot.data[index].invoiceNumber,
-                                        status: snapshot.data[index].status,
-                                        id: snapshot.data[index].id
+                                      final Invoice ui = Invoice(
+                                          tanggal: snapshot.data[index].tanggal,
+                                          invoiceNumber: snapshot.data[index].invoiceNumber,
+                                          status: snapshot.data[index].status,
+                                          id: snapshot.data[index].id
                                       );
-                                      return UnpaidInvoicesCard(ui, index == snapshot.data.length ? true : false);
+                                      return InvoiceCard(ui, index == snapshot.data.length ? true : false);
                                     },
                                   ));
                             }

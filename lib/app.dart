@@ -2,14 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:mynusa/pages/attention/page_attention.dart';
 import 'package:mynusa/pages/cctv/cctv.dart';
 import 'package:mynusa/pages/home/page_home.dart';
+import 'package:mynusa/pages/invoice_history/page_invoice_history.dart';
 import 'package:mynusa/pages/login/page_login.dart';
 import 'package:mynusa/pages/main_menu/main_menu.dart';
 import 'package:mynusa/pages/noc_notifications/page_noc_notifications.dart';
+import 'package:mynusa/pages/notifikasi/page_notifikasi.dart';
 import 'package:mynusa/pages/profile/page_profile.dart';
+import 'package:mynusa/pages/saran/page_saran.dart';
 import 'package:mynusa/pages/setting/page_setting.dart';
 import 'package:mynusa/pages/splash_screen/splash_screen.dart';
 import 'package:mynusa/pages/subscription/page_subscription.dart';
-import 'package:mynusa/pages/unpaid_invoices/page_unpaid_invoices.dart';
+import 'package:mynusa/pages/invoice/page_invoice.dart';
+import 'package:mynusa/pages/trouble_tickets/page_trouble_tickets.dart';
 import 'package:mynusa/services/dark_theme_provider.dart';
 import 'package:mynusa/services/language_provider.dart';
 import 'package:mynusa/services/styles.dart';
@@ -77,8 +81,13 @@ class _AppState extends State<App> {
 
                         "/setting": (context) => const SettingPage(),
                         "/profile": (context) => const ProfilePage(),
+                        "/notification": (context) => const NotifikasiPage(),
+                        "/feedback": (context) => const SaranPage(),
 
-                        "/unpaidInvoices": (context) => UnpaidInvoicesPage(),
+                        "/unpaidInvoices": (context) => InvoicePage(),
+                        "/invoiceHistory": (context) => InvoiceHistoryPage(),
+
+                        "/troubleTickets": (context) => TroubleTicketsPage(),
                         "/subscription": (context) => SubscriptionPage(),
                         "/cctv": (context) => CctvPage(),
                       },

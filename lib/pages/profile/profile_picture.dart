@@ -22,13 +22,16 @@ class _ProfilePictureState extends State<ProfilePicture> {
                 alignment: Alignment.bottomRight,
                 child: CircleAvatar(
 
-                    radius: 18,
+                    radius: 14,
                     backgroundColor: Colors.white,
                     child: CircleAvatar(
 
-                        radius: 16,
+                        radius: 12,
                         backgroundColor: Color(int.parse(primaryColor)),
-                        child: Icon(PhosphorIcons.pencil,color: Colors.white,)
+                        child: Icon(
+                          PhosphorIcons.camera_bold,
+                          color: Colors.white,
+                        size: 16,)
                     )
                 ),
               ),

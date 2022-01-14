@@ -24,7 +24,7 @@ class NotificationTile extends StatelessWidget {
               fontWeight: FontWeight.w700),
         ),
         onTap: () {
-          Navigator.pushNamed(context, "/pakan");
+          Navigator.pushNamed(context, "/notification");
         },
       ),
     );
