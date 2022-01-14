@@ -9,7 +9,7 @@ class SaranPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebView(
-      initialUrl: "https://forms.gle/mkS9ANNWUtWXxbPE8"
+      initialUrl: "https://docs.google.com/forms/d/e/1FAIpQLScXBlo2-PSWuWNSVU4Bp5q9jq5Xxx9i7bNHXic6c_eSJIaQRA/viewform?usp=sf_link"
     );
   }
 }

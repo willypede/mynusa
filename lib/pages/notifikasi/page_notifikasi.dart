@@ -39,17 +39,7 @@ class NotifikasiPage extends StatelessWidget {
               },
             ),
             centerTitle: true,
-            actions: [
-              IconButton(
-                  icon: Icon(
-                    Icons.history,
-                    size: 32,
-                  ),
-                  color: Colors.white,
-                  onPressed: () {
 
-                  })
-            ],
           ),
           body: Container(
             padding: EdgeInsets.all(16),
